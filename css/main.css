@@ -1322,6 +1322,10 @@ footer .bg {
         width: 15vw;
         margin-top: -4vw;
     }
+    header.minimize .logo {
+        width: 15vw;
+        margin-top: -2vw;
+    }
     header .menu_icon {
         display: block;  /*나타남*/
         width: 9vw;
@@ -1351,6 +1355,10 @@ footer .bg {
         right: 10vw;
         width: 8vw;
     }
+    section .des h1 {
+        font-size: 3vw;
+    }
+
     .box {
         height: 50vh;
     }
@@ -1443,7 +1451,7 @@ footer .bg {
     .section9 > .w1200 {
         margin-top: 15vw;
     }
-    @media screen and (max-width:480px) {
+    @media screen and (max-width:360px) {
         .section8 .pro_1 .skill {
             width:135%;
         }
