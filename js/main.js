@@ -140,24 +140,40 @@ $(function() {
 
     // swiper
     var swiper = new Swiper(".mySwiper", {
-        freeMode: true,
-        slidesPerView: 3,
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
         breakpoints: {
+            480: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+                centerdSlides: true
+            },
             768: {
+                slidesPerView: 1,
                 spaceBetween:20,
+                centerdSlides: false
             },
             1024: {
+                slidesPerView: 2,
                 spaceBetween:30,
+                centerdSlides: false
+            },
+            1200: {
+                slidesPerView: 3,
+                spaceBetween:40,
+                centerdSlides: false
             },
             1600: {
+                slidesPerView: 3,
                 spaceBetween:40,
+                centerdSlides: false
             },
             1920: {
+                slidesPerView: 3,
                 spaceBetween:50,
+                centerdSlides: false
             }
         },
     });
