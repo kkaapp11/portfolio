@@ -532,6 +532,9 @@ section .des .buttons .origin_btn {
 section .des .buttons .plan_btn {
     background-color: #f99e2f;
 }
+.plan_btn a{
+    color: #fff;
+}
 /* 배경 아이콘 */
 lord-icon  {
     opacity: 0.8;
@@ -630,6 +633,9 @@ section .swiper .s4 {
 }
 section .swiper .s5 {
     background-image: url("../img/mockup5.jpg");
+}
+section .swiper .s6 {
+    background-image: url("../img/mockup6.jpg");
 }
 section .slide_btn {
     width: 20vw;
