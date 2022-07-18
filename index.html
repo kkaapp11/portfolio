@@ -28,7 +28,10 @@
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
-    
+    <!-- 비메오 -->
+    <script src="https://player.vimeo.com/api/player.js"></script>
+    <!-- scroll -->
+    <script src="https://unpkg.com/scrollreveal"></script>
     <!-- 외부 js 연결 -->
     <script src="js/main.js"></script>
 
@@ -192,7 +195,7 @@
                         </div>
                         <div class="buttons">
                             <button class="renewal_btn" onclick="window.open('http://kkaapp1.dothome.co.kr/ahnlab')">리뉴얼 보기</button>
-                            <button class="origin_btn" onclick="window.open('http://www.purmil.co.kr')">오리지널 보기</button>
+                            <button class="origin_btn" onclick="window.open('http://www.ahnlab.com/kr/site/main.do')">오리지널 보기</button>
                         </div>
                     </div>
                 </div>
@@ -230,11 +233,11 @@
                         </div>
                         <div class="buttons">
                             <button class="renewal_btn" onclick="window.open('http://kkaapp1.dothome.co.kr/ridi')">리뉴얼 보기</button>
-                            <button class="origin_btn" onclick="window.open('http://www.acebed.com/main/index.do')">오리지널 보기</button>
+                            <button class="origin_btn" onclick="window.open('https://ridibooks.com/ebook/recommendation')">오리지널 보기</button>
                             <!-- <form method="get" action="file.doc">
                                 <button class="plan_btn" type="submit">기획서 다운로드</button>
                              </form> -->
-                            <button class="plan_btn" type="submit"><a class="#" href="img/" download>PDF 다운로드</a></button>
+                            <button class="plan_btn" type="submit"><a class="#" href="img/ridi-book.pdf" download>기획서 다운로드</a></button>
                         </div>
                     </div>
                     <div class="photo od4">
@@ -307,10 +310,8 @@
                             'Kolon',
                             'width=360, height=760, toolbar=no, menubar=no, scrollbar=no, resizable=no'); 
                              return false;">모바일 보기</button>
-                            <button class="origin_btn" onclick="window.open('http://www.mugobox.com')">오리지널 보기</button>
-                            <form method="get" action="file.doc">
-                                <button class="plan_btn" type="submit">기획서 다운로드</button>
-                             </form>
+                            <button class="origin_btn" onclick="window.open('https://www.kolonsport.com/')">오리지널 보기</button>
+                            <button class="plan_btn" type="submit"><a class="#" href="img/kolon.pdf" download>기획서 다운로드</a></button>
                         </div>
                     </div>
                 </div>
@@ -393,6 +394,9 @@
                   <div class="swiper-slide s5" data="5, 3단 리플렛, SPURS, 포토샵 & 일러스트레이터, 3단 리플렛 디자인">
                     <a href="img/mockup5.jpg"><p><i>자세히 보기</i></p></a>
                   </div>
+                  <div class="swiper-slide s6" data="6, 영상포트폴리오, 릴 영상, 에펙 & C4D, 영상 포트폴리오">
+                    <a href="img/mockup6.jpg"><p><i>자세히 보기</i></p></a>
+                  </div>
                 </div>
             </div>
             <div class="slide_btn">
@@ -444,16 +448,14 @@
                               </div>
                               <div class="text">JavaScript</div>
                             </div>
-                            
-                               <div class="card node">
+                               <div class="card ps">
                               <div class="circle">
                                 <div class="bar"></div>
                                 <div class="box1"><span></span></div>
                               </div>
                               <div class="text">Ps / Ai</div>
                             </div>
-                            
-                            <div class="card react">
+                            <div class="card ae">
                               <div class="circle">
                                 <div class="bar"></div>
                                 <div class="box1"><span></span></div>
@@ -479,7 +481,6 @@
                     <form class="gform pure-form pure-form-stacked" method="POST" data-email="84kkaapp@gmail.com"
                         action="https://script.google.com/macros/s/AKfycbytHIFR7jPl3iMNS7o59icS4fRsuP9seDMYKlJb/exec">
                 <!-- change the form action to your script url -->
-
                 <div class="form-elements">
                     <fieldset class="pure-group">
                         <label for="name">성&nbsp;&nbsp;&nbsp;&nbsp;명&nbsp;&nbsp;: </label>
@@ -514,7 +515,6 @@
                 <div class="thankyou_message" style="display:none;">
                 <h2><em>감사합니다!</em> 최대한 빠른 시일 안에 답장 드리겠습니다.</h2>
                 </div>
-
             </form>
                 </div>
                 <div class="email_animation">
@@ -590,12 +590,13 @@
         $(".js .bar").circleProgress({
           value: 0.50
         });
-        $(".node .bar").circleProgress({
+        $(".ps .bar").circleProgress({
           value: 0.90
         });      
-        $(".react .bar").circleProgress({
+        $(".ae .bar").circleProgress({
           value: 0.80
         });
     </script>
+    
 </body>
 </html>
