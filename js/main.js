@@ -2,7 +2,7 @@ $(function() {
     var decoLeft =0;
     var menuWidth = 0;
 
-    // 만약 body 영역의 가로길리가 480px 이상이면
+    // 만약 body 영역의 가로길이가 480px 이상이면
     if($(window).width() > 480){
         // pc번전
         $('nav').hover(function() {
@@ -137,7 +137,8 @@ $(function() {
 
     window.addEventListener("scroll", checkBoxes);
     checkBoxes()
-
+    
+    ScrollReveal().reveal('.wrapper_a',);
     // swiper
     var swiper = new Swiper(".mySwiper", {
         navigation: {
@@ -177,6 +178,7 @@ $(function() {
             }
         },
     });
+
     // popup 
     var img_num=0;
     var img_total=$('.swiper-slide').length;
@@ -189,6 +191,9 @@ $(function() {
         // 클릭한 이미지의 a태그의 href속성을 img_attr변수에 저장
         var img_attr=$(this).find('a').attr('href');
         var img_addr='<img src="'+img_attr+'">';
+        if(img_num == 6){
+            var img_addr='<iframe src="https://player.vimeo.com/video/729838312?autoplay=true&loop=true&muted=true" width="640" height="360" frameborder="0" allowfullscreen></iframe>';
+        }
         // 클릭한 swiper-slide의 data속성값을 txt_addr변수에 저장
         var txt_addr=$(this).attr('data');
         console.log(txt_addr);
@@ -224,6 +229,9 @@ $(function() {
             img_num=1;
         }       
         var img_addr='<img src="img/mockup'+img_num+'.jpg">'
+        if(img_num == 6){
+            var img_addr='<iframe src="https://player.vimeo.com/video/729838312?autoplay=true&loop=true&muted=true" width="640" height="360" frameborder="0" allowfullscreen></iframe>';
+        }
         var txt_addr=$('.swiper-slide').eq(img_num-1).attr('data');
         var str=txt_addr.split(',',5); 
         var txt_str='<div class="slide_des"><div class="slide_title"><i>'+str[0]+'</i>'+str[1]+'</div><div class="slide_sub_title">제목</div><div class="slide_content">'+str[2]+'</div><div class="slide_sub_title">스킬</div><div class="slide_content">'+str[3]+'</div><div class="slide_sub_title">컨셉</div><div class="slide_content">'+str[4]+'</div></div>';
@@ -245,6 +253,9 @@ $(function() {
             img_num=img_total;
         }   
         var img_addr='<img src="img/mockup'+img_num+'.jpg">'
+        if(img_num == 6){
+            var img_addr='<iframe src="https://player.vimeo.com/video/729838312?autoplay=true&loop=true&muted=true" width="800" height="450" frameborder="0" allowfullscreen></iframe>';
+        }
         var txt_addr=$('.swiper-slide').eq(img_num-1).attr('data');
         var str=txt_addr.split(',',5); 
         var txt_str='<div class="slide_des"><div class="slide_title"><i>'+str[0]+'</i>'+str[1]+'</div><div class="slide_sub_title">제목</div><div class="slide_content">'+str[2]+'</div><div class="slide_sub_title">스킬</div><div class="slide_content">'+str[3]+'</div><div class="slide_sub_title">컨셉</div><div class="slide_content">'+str[4]+'</div></div>';
