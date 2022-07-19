@@ -945,6 +945,9 @@ section .slide_btn .swiper-button-prev::after {
     border-radius: 0.8vw;
     position: relative;
 }
+.thankyou_message {
+    color: #fff;
+}
 em {
     font-style: normal;
 }
