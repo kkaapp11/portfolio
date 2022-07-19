@@ -947,6 +947,9 @@ section .slide_btn .swiper-button-prev::after {
 }
 .thankyou_message {
     color: #fff;
+    height:20vh;
+    margin-top: 13vh;
+    text-align: center;
 }
 em {
     font-style: normal;
