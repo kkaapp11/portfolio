@@ -759,7 +759,7 @@ section .slide_btn .swiper-button-prev::after {
     width: 35%;
     height: 50vh;
     /* background-color: yellow; */
-    background-image: url(../img/pro.png);
+    background-image: url(../img/pro-1.png);
     background-repeat: no-repeat;
     background-size: 55%;
     background-position: center 2.5vw;
@@ -1356,7 +1356,7 @@ footer .bg {
         width: 35%;
         height: auto;
         /* background-color: yellow; */
-        background-image: url(../img/pro.png);
+        /* background-image: url(../img/pro.png); */
         background-repeat: no-repeat;
         background-size: 55%;
         background-position: center 2.5vw;
