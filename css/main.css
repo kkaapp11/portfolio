@@ -3,7 +3,8 @@
 
 *{ margin: 0; padding: 0;}
 li{ list-style: none;}
-a {text-decoration: none; color: #333; display: block;} 
+a {text-decoration: none; color: #24245b; display: block;} 
+h1, li, span {color: #24245b;}
 img { width: 100%;}
 html, body { overflow-x: hidden; font-family:'Noto Sans KR', sans-serif; }
 body {
@@ -519,6 +520,13 @@ section .des .buttons button {
     border-radius: 24px;
     margin-right:1vw ;
     cursor: pointer;
+    transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+section .des .buttons button:hover {
+	box-shadow: inset 0 0 20px rgba(255, 255, 255, 1), 0 0 20px rgba(255, 255, 255, 1);
+	outline-color: rgba(255, 255, 255, 0);
+	outline-offset: 15px;
+	text-shadow: 1px 1px 2px #427388;
 }
 section .des .buttons .renewal_btn {
     background-color: #24245b;
@@ -535,6 +543,7 @@ section .des .buttons .plan_btn {
 .plan_btn a{
     color: #fff;
 }
+
 /* 배경 아이콘 */
 lord-icon  {
     opacity: 0.8;
@@ -731,9 +740,10 @@ section .slide_btn .swiper-button-prev::after {
 /* 프로필 */
 .section8 {
     width: 100%;
-    height: 60vh;
+    height: 85vh;
     padding-top: 20vh;
     background-color: rgba(253,239,218,0.5);
+    z-index: 200;
 }
 .section8 h1 {
     color: #264653;
@@ -754,11 +764,51 @@ section .slide_btn .swiper-button-prev::after {
     background-position: center 2.5vw;
 }
 .section8 .pro_1 .me .p_text {
+    display: flex;
+    flex-flow: column nowrap;
     text-align: center;
     color: #24245b;
     font-size:1.2vw;
     font-weight: 700;
     margin-top: 15vw;
+}
+.buttons1 {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    margin-top: 1vw;
+    width: 100%;
+}
+.buttons1 button {
+    background: none;
+    border: none;
+    padding: 0.5vw 1.2vw;
+    font-weight: bold;
+    color: #fff;
+    font-size: 0.8vw;
+    border-radius: 24px;
+    /* margin-right:0vw ; */
+    cursor: pointer;
+    outline: 1px solid rgba(255, 255, 255, 0.5);
+	transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.buttons1 button:hover {
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 1), 0 0 20px rgba(255, 255, 255, 1);
+	outline-color: rgba(255, 255, 255, 0);
+	outline-offset: 15px;
+	text-shadow: 1px 1px 2px #427388;
+}
+.buttons1 .pt_btn {
+    background-color: #35b2e2;
+}
+.buttons1 .pt_btn1 {
+    background-color: #24245b;
+}
+.pt_btn a {
+    color: #fff;
+}
+.pt_btn1 a {
+    color: #fff;
 }
 .section8 .pro_1 .skill {
     width: 63%;
@@ -827,7 +877,7 @@ section .slide_btn .swiper-button-prev::after {
  
     /* contact us  */
 .section9 {
-    padding-top: 25vh;
+    padding-top: 10vh;
     height: 120vh;
     background-color: rgba(253,239,218,0.5);
 }
@@ -1525,6 +1575,9 @@ footer .bg {
     }
     .section8 .pro_1 .me .p_text {
         margin-top: 33vw;
+    }
+    .section8 .pro_1 .skill {
+        padding-top: 10vw;
     }
     .wrapper_a .card {
         width: 48%;
