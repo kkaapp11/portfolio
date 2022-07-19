@@ -551,6 +551,7 @@ lord-icon  {
 lord-icon  span {
     position: absolute;
     white-space: nowrap;
+    color: #fff;
     left: 0;
 }
 .section2 {
