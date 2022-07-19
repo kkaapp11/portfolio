@@ -1493,7 +1493,7 @@ footer .bg {
         height: 50vh;
     }
     .section {
-        height: auto;
+        height: 100vh;
     }
     section .des {
         display: flex;
