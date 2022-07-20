@@ -138,7 +138,6 @@ $(function() {
     window.addEventListener("scroll", checkBoxes);
     checkBoxes()
     
-    ScrollReveal().reveal('.wrapper_a',);
     // swiper
     var swiper = new Swiper(".mySwiper", {
         navigation: {
@@ -290,7 +289,10 @@ $(function() {
         'img/icon_03.png',
         'img/icon_04.png',
         'img/icon_05.png',
-        'img/icon_06.png'
+        'img/icon_06.png',
+        'img/icon_07.png',
+        'img/icon_08.png',
+        'img/icon_09.png',
     ];
     var ran=0;
     var mouseX=0;
