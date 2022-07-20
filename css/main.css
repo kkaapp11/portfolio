@@ -604,7 +604,7 @@ section .swiper .swiper-slide p {
     width: 100%;
     height: 100%;
     position: absolute;
-    background-color: rgba(5, 113, 137, 0.7);
+    background-color: rgba(53, 178, 226, 0.7);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -623,12 +623,42 @@ section .swiper .swiper-slide p i {
     padding: 0.5vw 1.5vw;
     border-radius: 30px;
     border: 2px solid #fff;
+    position: relative;
+    transition: color 0.5s ease-in-out;
+}
+section .swiper .swiper-slide p i::before,
+section .swiper .swiper-slide p i::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  border: 2px solid #fff;
+  background-color: #0000ff;
+  top: 0;
+  left: 0;
+  transition: clip-path 0.3s;
+  z-index: -1;
+}
+
+section .swiper .swiper-slide p i::before {
+  clip-path: circle(0 at 0 0);
+}
+
+section .swiper .swiper-slide p i::after {
+  clip-path: circle(0 at 100% 100%);
 }
 section .swiper .swiper-slide p i:hover {
-    color: #333;
-    font-weight: bold;
-    background-color: #fff;
+    color: #fff;
 } 
+section .swiper .swiper-slide p i:hover::before {
+    clip-path: circle(100% at 0 0);
+}
+  
+section .swiper .swiper-slide p i:hover::after {
+    clip-path: circle(100% at 100% 100%);
+}
+
 section .swiper .s1 {
     background-image: url("../img/mockup1.jpg");
 }
