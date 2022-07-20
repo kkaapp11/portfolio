@@ -8,6 +8,7 @@
     <!-- 파비콘 -->
     <link href="img/logo_favicon-2.png" type="image/icon" rel="shortcut icon">
 
+   
     <!-- swiper slide css cdn -->
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
 
@@ -132,7 +133,7 @@
                           <!-- wrapper end-->
                     </div>
                     <div class="des od2">
-                        <h1><i>1</i>리뉴얼 홈페이지 - AhnLab</h1>
+                        <h1 class="test"><i>1</i>리뉴얼 홈페이지 - AhnLab</h1>
                         <div class="detail">
                             <ul>
                                 <li>
@@ -566,6 +567,12 @@
           value: 0.80
         });
     </script>
-    
+    <script>
+        ScrollReveal().reveal('.photo, .photo1, .des', { duration: 1500, delay: 1300, distance: '100px', interval: 250, easing: 'ease'});
+        ScrollReveal().reveal('.section6', {  duration: 1500 , distance: '400px', easing: 'ease'});
+        ScrollReveal().reveal('.section6', { origin: 'right' });
+        ScrollReveal().reveal('.pro_1, .w1200', {  duration: 1500, distance: '100px', easing: 'ease'});
+        ScrollReveal().reveal('.photo, .photo1, .des', { reset: true });
+    </script>
 </body>
 </html>
