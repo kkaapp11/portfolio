@@ -1643,6 +1643,9 @@ footer .bg {
     .card .text {
         font-size: 3vw;
     }
+    .pure-form .pure-group input {
+        padding: 12px;
+    }
     .section9 {
         padding-top: 15vw;
         height: 140vh;
@@ -1650,32 +1653,36 @@ footer .bg {
     .section9 > .w1200 {
         margin-top: 15vw;
     }
-    @media screen and (max-width:360px) {
-        .popup .container {
-            width: 100%;
-        }
-        .popup .container .graphic {
-            width: 100%;
-            height: 30%;
-        }
-        .popup .close {
-            top: 45vw;
-            width: 7vw;
-        }
-        .popup .prevBtn {
-            width: 7vw;
-        }
-        .popup .nextBtn{
-            width: 7vw;
-        }
-        .section8 .pro_1 .skill {
-            width:135%;
-        }
-        .wrapper_a .card {
-            height: 55vw;
-        }
-        .section9 > .w1200 {
-            width: 70vw;
-        }
+}    
+@media screen and (max-width:360px) {
+    .popup .container {
+        width: 100%;
     }
+    .popup .container .graphic {
+        width: 100%;
+        height: 30%;
+    }
+    .popup .close {
+        top: 45vw;
+        width: 7vw;
+    }
+    .popup .prevBtn {
+        width: 7vw;
+    }
+    .popup .nextBtn{
+        width: 7vw;
+    }
+    .section8 .pro_1 .skill {
+        width:135%;
+    }
+    .wrapper_a .card {
+        height: 55vw;
+    }
+    .pure-form .pure-group input {
+        padding: 12px;
+    }
+    .section9 > .w1200 {
+        width: 70vw;
+    }
+
 }
